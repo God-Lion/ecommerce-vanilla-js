@@ -1,0 +1,165 @@
+footer .footer {
+    // background-color:   rgba($color: $blueMarine, $alpha: 80% );
+    background: transparent;
+    // color:              $footerTextPgColor;
+    width:              100%;
+    bottom:             0;
+    left:               0;
+    right:              0;
+
+    .widget {
+        padding: 2.5em 0;
+
+        &.row { 
+            margin-bottom:  0;
+            padding-bottom: 0;
+        }
+
+        .widg {
+            &:first-child {
+                padding-top:        0;
+                padding-bottom:     0;
+                // background-color: olive;
+            }
+            
+            & > div {
+                align-items:        center;
+                text-align:         justify;
+                justify-content:    space-evenly;
+                // background-color: rebeccapurple;
+
+                .title {
+                    // color:          $footerTextTitleColor;
+                    // font-size:      $footerFontSize;
+                    margin-bottom:  1em;
+                    margin-right:   0;
+                    text-transform: capitalize;
+
+                    &.logo {
+                        padding-left:   0;
+                        // height:         50px;;
+                        // width:          100%;;
+                        img {
+                            margin-left: 10px;
+                            width: 2em;
+                            height: 2em;
+                        }
+                    }
+                }
+                .contact-info {
+                    // background-color: orange;
+                    div {
+                        // background-color: purple;
+                        display: inline;
+                    }
+                }
+
+                ul {
+                    position:           relative;
+                    list-style-type:    none;
+                    margin:             0;
+                    padding:            0;
+
+                    li {
+                        margin-bottom:  10px;
+
+                        a {
+                            color:              $blueMarine;
+                            margin-bottom:      14px;
+                            text-decoration:    none;
+                            text-transform:     capitalize;
+
+                            // &:hover { color:    darken($color: $footerLinkHoverColor, $amount: 10% ); }
+                        }
+
+                        // i { color:    darken($color: $footerLinkHoverColor, $amount: 10% ); }
+                    }
+                }
+                .social {
+                    background-color: bisque;
+                    span {
+                        background-color: pink;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            & > :nth-child(2) {
+                padding-left:   50px;
+                padding-right:  3px;
+            }
+        }
+    }
+
+    .bar {
+        &.last {
+            background-color:   rgba($color: $cyanLight, $alpha: 10% );;
+            text-align:         center;
+            padding-top:        25px;
+            width:              100%;
+            z-index:            9;
+
+            p { margin-bottom: 0; }
+        }
+    }
+}
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--clr-secondary);
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius);
+    color: var(--clr-white);
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+@media only screen and (max-width:$small-screen-up) {
+    footer .footer {
+        .widget {
+            font-size: 14px;
+
+            .widg {
+                padding-left: 0;
+                padding-right: 0;
+
+                & > div {
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    .title {
+                        font-size:      18px;
+                        margin-bottom:  20px;
+                    }
+                }
+
+                & > :nth-child(2) {
+                    padding-left:   0;
+                    padding-right: 0;
+                }
+
+                & > :nth-child(3) {
+                    // background-color: red;
+                    li {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .bar {
+            &.last {
+                font-size: 12px;
+            }
+        }
+    }
+}

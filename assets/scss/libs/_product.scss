@@ -1,0 +1,130 @@
+.products {
+    background-color: palegoldenrod;
+    .case {
+        // background-color: yellowgreen;
+        // border: 1px solid black;
+        position: relative;
+        color: $cyanDark;
+        p { 
+            margin: 0;
+            padding-left: 10px;
+        }
+
+        & > :first-child {
+            // background-color: powderblue;
+            & > .img {
+                display: flex;
+                justify-content: center;
+                // background-color: aqua;
+            }
+        }
+
+        .description {
+            .name {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .price {
+                p {
+                    display: inline;
+                    font-size: 17px;
+                    &:last-child { padding-left: 0; }
+                }
+                
+            }
+        }
+    
+    
+
+        // &:hover {
+        //     background-color: cadetblue;
+        // }
+
+        &:hover .case-hover {
+            // background-color: cadetblue;
+            display: block;
+        }
+
+        .case-hover{
+            background-color: rgba($color: blue, $alpha: 80%);
+            // background-color: rgba($color: peru, $alpha: 80%);
+            // background-color: #cd853f;
+            color: #FFF;
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 90%;
+            height: 100%;
+
+
+            & > :first-child {
+                // background-color: purple;
+                padding-top: 15px;
+                padding-left: 20px;
+            }
+           
+            & > :nth-child(2) {
+                // background-color: orange;
+                display: flex;
+                justify-content: center;
+                padding: 2% 0;
+                margin: 0;
+
+                button {
+                    background-color: #FFF;
+                    border-radius: 80px;
+                    padding: .9em 1.2em;
+                    label {
+                        padding: 0  0 0 5px;
+                        margin: 0;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                    &:first-child {
+                        // background-color: purple;
+                        border-radius: 35px;
+                        padding: .9em 2em;
+                        margin-right: 10px;
+                        &:hover {
+                            background-color: #EEE;
+                            color: lighten($color: green, $amount: 13%);
+                        }
+                    }
+
+                    &:last-child:hover {
+                        background-color: red;
+                        color: #FFF;
+                    }
+                }
+            }
+
+            & > :last-child {
+                position: absolute;
+                // background-color: purple;
+                font-weight: bold;
+                padding-left: 20px;
+                // padding-bottom: 15px;
+                bottom: 0;
+                left: 0;
+                // display: flex;
+
+                // &.row {
+                //     display: flex;
+                //     background-color: red;
+                // }
+                &.description {
+                    display: block;
+                    // background-color: bisque;
+                }
+            }
+        }
+
+        
+
+        
+        img {
+            // width: 9em;
+            height: 8em;
+        }
+    }
+}

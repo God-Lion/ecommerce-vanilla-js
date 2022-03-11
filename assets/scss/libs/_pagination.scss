@@ -1,0 +1,13 @@
+.pagination {
+    // background-color: #FFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .page {
+        background-color: $yellowLight;
+        color: $blueMarine;
+        margin: 0 5px;
+        padding: 10px 16px;
+    }
+}

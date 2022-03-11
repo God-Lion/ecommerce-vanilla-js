@@ -1,0 +1,150 @@
+.banner {
+    // background-color: red;
+    background-image: url(../img/bg.png);
+}
+.carousel {
+    // position: relative;
+    // width: 100%;
+    // overflow: hidden;
+    // background-color: rebeccapurple;
+
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    // background-color: #1E88E5;
+    // transform: translate(-50%, -50%);
+
+    img {
+        height: 100%;
+        width:  100%;
+    }
+
+    &-inner {
+        background-color: bisque;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        & > .item {
+            position: relative;
+            display: none;
+            animation: 0.5s ease-in-out;
+        }
+
+        & > .active, & > .next {  display: block; }
+
+        & > .next {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .content {
+        background-color: red;
+        color: #FFF;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+    }
+
+
+    &.nav {
+        position:           absolute;
+        top:                50%;
+        margin-top:         -31px;
+        left:               10px;
+        // background-color:   bisque;
+        height:             63px;
+        width:              63px;
+
+        &.next {
+            right: 10px;
+            left: auto;
+        }
+
+        i { font-size: 3em; }
+    }
+
+    .pagination {
+        position:   absolute;
+        bottom:     10px;
+        left:       0;
+        right:      0;
+        text-align: center;
+
+        button {
+            background-color:   #000;
+            opacity:            80%;
+            display:            inline-block;
+            height:             10px;
+            width:              10px;
+            border-radius:      10px;
+            margin:             0 2px;
+
+            &.active {
+                background-color:       #FFF;
+                padding-left:           10px !important;
+                padding-right:          10px !important;
+                transition:             padding-left .1s ease-in 0s padding-right .1s ease-out 0s;
+            }
+        }
+    }
+}
+
+.slide {
+    &-left {
+        &-enter-active { animation:  slideLeftIn .5s; }
+    
+        &-leave-active {
+            animation:  slideLeftOut .5s;
+            position:   absolute;
+            top:        0;
+            left:       0;
+            right:      0;
+            bottom:     0;
+            width:      100%;
+        }
+    }
+
+    &-right {
+        &-enter-active { animation:  slideRightIn .5s; }
+    
+        &-leave-active {
+            animation:  slideRightOut .5s;
+            position:   absolute;
+            top:        0;
+            left:       0;
+            right:      0;
+            bottom:     0;
+            width:      100%;
+        }
+    }
+}
+
+@keyframes slideLeftIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideLeftOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes slideRightIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideRightOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}

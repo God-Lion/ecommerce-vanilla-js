@@ -1,0 +1,54 @@
+.contact {
+    background-color: rgba($color: gray, $alpha: 10% );
+    // background-color: rosybrown;
+    .form {
+      // background-color: yellowgreen;
+      [class*=col-] { float: initial; }
+  
+      .input-field {
+          position: relative;
+          width: 100%;
+  
+          & > label {
+              // background-color: orangered !important;
+              color: grey;
+              position: absolute;
+              top: .1em;
+              left: 4em;
+              font-size: 1rem;
+              cursor: text;
+              -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+              transition: color .2s ease-out, -webkit-transform .2s ease-out;
+              transition: transform .2s ease-out, color .2s ease-out;
+              transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+              -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+              text-align: initial;
+              text-transform: capitalize;
+              -webkit-transform: translateY(12px);
+              transform: translateY(12px);
+          }
+  
+          & > input, textarea  {
+            border: 1px solid grey;
+          }
+  
+          textarea { 
+            height: 100px;
+  
+            & ~ label { top: 0; }
+          }
+  
+          input, textarea {
+            padding: 12px 24px;
+            width: 92%;
+  
+            &:focus {
+              & ~ label { color: transparent; }
+            }
+          }
+  
+  
+      }
+    }
+  }

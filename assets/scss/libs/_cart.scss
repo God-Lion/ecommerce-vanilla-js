@@ -1,0 +1,64 @@
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+
+    tr td:first-child, th:first-child { padding-left: 2em; }
+
+    thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    & td, & th {
+        padding: .75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+    &-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    &-striped tbody tr:nth-of-type(odd) { background-color: rgba($color: $blueMarine, $alpha: 20% ); }
+
+    &-sm td, &-sm th { padding: .3rem; }
+}
+
+.product {
+    &-des {
+        // background-color: aquamarine;
+        & > div:first-child {
+            // background-color: orchid;
+            // display: flex;
+            // justify-content: center;
+            float: left;
+            width: 50%;
+            img {
+                
+                width: 12em;
+            }
+        }
+        & > div:last-child {
+            // background-color: bisque;
+            float: right;
+            width: 50%;
+            p {
+                margin: 0;
+                padding: 2px 0;
+
+            }
+            .price {
+                // padding: 5px 0;
+                font-size: 1.4em;
+                text-decoration: underline;
+            }
+            
+        }
+
+    }
+}

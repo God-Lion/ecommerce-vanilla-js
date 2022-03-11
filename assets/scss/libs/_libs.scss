@@ -1,0 +1,21 @@
+// @import "carousel.scss";
+@import "nav.scss";
+@import "store.scss";
+@import "product.scss";
+// @import "tab.scss";
+@import "button.scss";
+// @import "card.scss";
+// @import "pagination.scss";
+// @import "cart.scss";
+@import "form.scss";
+// @import "footer.scss";
+
+header {
+    background: radial-gradient(
+        #ec610a,
+        #ec610a,
+        #a40a3c,
+        #a40a3c
+    )
+    center/cover no-repeat;
+}

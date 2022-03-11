@@ -1,0 +1,109 @@
+.store {
+    .filter {
+        // background-color: bisque;
+        margin: 0;
+        padding: 0;
+
+        // .header {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     // border: 1px solid #333;
+        //     // margin: .8em 0;
+        //     .title {
+        //         padding: 0 15%;
+        //         margin: 0;
+        //     }
+            
+        //     // & > :last-child {
+        //     //     border: 1px solid #333;
+        //     //     border-radius: 3px;
+        //     // }
+        //     & > & > :first-child, & > :last-child {
+        //         padding: .6em .9em;
+        //     }
+        // }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            // border: 1px solid #333;
+
+
+            .title {
+                // background-color: aqua;
+                display: inline;
+                width: 100%-(14%*2);
+                padding-left: 4%;
+                font-size: 1.5em;
+            }
+            & > & > :first-child, & > :last-child { padding: .6em .9em; }
+        }
+
+        .category {
+            padding: 0;
+
+            // .header {
+            //     display: flex;
+            //     justify-content: space-between;
+
+            //     .title {
+            //         // background-color: aqua;
+            //         display: inline;
+            //         width: 100%-(14%*2);
+            //         padding-left: 4%;
+            //         font-size: 1.5em;
+            //     }
+
+            // }
+            
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        color: blue;
+                        text-decoration: none;
+                        font-size: 1.1em;
+                        transition: font-size 2s;
+                    }
+                }
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: .9em 2em;
+                    // background-color: rgb(182, 152, 251);
+
+                    &.active {
+                        // background-color: rgb(182, 152, 251);
+                        a {
+                            color: blue; 
+                        }
+                    }
+                    
+                    a, span { font-weight: 100; }
+
+                    a { padding-left: 4%; }
+
+                    span { 
+                        // background-color: palevioletred;
+                        padding-right: 14%;
+                    }
+                  
+                }
+                
+
+            }
+            
+        }
+
+        .price {
+            background-color: palegreen;
+        }
+    }
+
+    
+}

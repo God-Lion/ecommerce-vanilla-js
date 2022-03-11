@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/index1.css">
+        <script src="../assets/js/la/index1.js" defer></script>
+        <title>Lion Sneakers</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <nav id="nav">
+                    <div class="nav-center">
+                        <div class="nav-header">
+                            <div>
+                                <img src="../assets/img/adidas/5.png" class="logo" alt="logo" />
+                                <span>Lion Sneakers</span>
+                            </div>
+                        </div>
+                        <div class="nav-search">
+                            <form method="get">
+                                <i class="fas fa-search"></i>
+                                <input type="search" name="search" id="search">
+                            </form>
+                        </div>
+                        <div class="links-container">
+                            <ul class="links">
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#freetime">freetime</a>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main role="main" id="home" class="active">
+            <section>
+                <div class="banner">
+                    <div class="carousel">
+                        <div class="col-4">
+                            <div class="col-12 time">
+                                <span id="hours">00</span>:
+                                <span id="minutes">00</span>:
+                                <span id="secondes">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section class="container">
+                <div class="row">
+                    <div class="col-12" id="allCategory">
+                        <button class="btn category">All</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="contentArticle"></div>
+                </div>
+                <div class="row">
+                    <div class="pagination">
+                        <button class="btn page">1</button>
+                        <button class="btn page">2</button>
+                        <button class="btn page">3</button>
+                        <button class="btn page">4</button>
+                        <button class="btn page">5</button>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <main role="freetime" id="freetime">
+            <div>freetime</div>
+            <div id="vid">
+                <video controls="controls" loop="loop">
+                    <source src="../assets/medias/1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </main>
+        <main role="contact" id="contact">
+            <div>
+                <i class="fas fa-phone"></i>
+            </div>
+
+            <div class="row">
+                <div class="entry col-12">
+                    <div class="contact col-12">
+                        <form method="POST" class="form center">
+                            <div class="col-12 ">
+                                <div class="input-field">
+                                    <input type="text" name="name" id="name" value="" aria-describedby="TitreHelp">
+                                    <label for="name">Nom</label>
+                                </div>
+                            </div>          
+                            <div class="col-12 ">
+                                <div class="input-field">
+                                    <label for="inputemail">Emaill</label>
+                                    <input type="email" name="email" id="email" value="" aria-describedby="TitreHelp">
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="input-field">
+                                    <textarea name="content" aria-describedby="TitreHelp" class="input-field"> </textarea>
+                                    <label for="inputcontent">Message</label>
+                                </div>
+                            </div>
+                            <div class="input-field center"><button type="submit" class="btn primary">send message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+			<div class="footer">
+				<div class="widget row">
+                    <div class="container">
+                        <div class="widg col-12">
+                            <div class="col-4">
+                                <div class="title">contact</div>
+                                <ul class="contact-info">
+                                    <li>
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                        <div>
+                                        <span>+(509) 2122-3829</span>
+                                        <span>+(509) 2122-3829</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                        <div><span>contact@lionsneakers.com</span></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker" aria-hidden="true"></i>
+                                        <div><span>Petion Ville haiti # 13</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <div class="title">useful links</div>
+                                <ul>
+                                    <li><a href="#">My account</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-4">
+                                <div class="title logo">
+                                    <img src="../assets/img/adidas/5.png" alt="logo">
+                                    Lion Sneakers
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Eaque est in porro similique ducimus atque dolorem,
+                                    laborum animi saepe cupiditate excepturi ipsa nihil odit dicta
+                                    adipisci, obcaecati ipsum id quisquam!
+                                </p>
+                                <!-- <div class="social">
+                                    <span><i class="fas fa-facebook"></i></span>
+                                    <span><i class="fas fa-twitter"></i></span>
+                                </div> -->
+                            </div>
+
+                        
+                        </div>
+                    </div>
+				</div>
+				<div class="last bar col-12">
+				    <p>Copyright © <span id="date"></span>  All rights reserve |  Lion Sneakers </p>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+    </body>
+</html>
